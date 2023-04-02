@@ -1,6 +1,3 @@
-// new component Section that will be used to wrap the content of each section
-// of the page. This component will be used in the App component.
-
 import React from "react";
 
 interface SectionProps {
@@ -9,7 +6,7 @@ interface SectionProps {
 
 const Section = ({ children }: SectionProps) => {
   return (
-    <section className="flex gap-10 justify-center items-center max-w-2xl m-auto pt-20">
+    <section className="flex flex-col items-center max-w-2xl gap-10 pt-20 m-auto sm:flex-row">
       {children}
     </section>
   );
